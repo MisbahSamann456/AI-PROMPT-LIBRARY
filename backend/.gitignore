@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+db.sqlite3
+*.egg-info/
+.egg/

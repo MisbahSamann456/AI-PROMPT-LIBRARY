@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1>✨ AI Prompt Library</h1>
+  <p class="subtitle">Curate and explore powerful AI prompts</p>
+
+  <button (click)="load()">🚀 Load Prompts</button>
+
+  <div class="grid">
+    <div class="card" *ngFor="let p of prompts">
+      <div class="card-top">
+        <h3>{{p.title}}</h3>
+        <span class="badge">{{p.complexity}}</span>
+      </div>
+
+      <p class="content">
+        {{p.created_at | date:'medium'}}
+      </p>
+
+      <div class="footer">
+        <span>🔥 AI Ready</span>
+      </div>
+    </div>
+  </div>
+
+</div>
